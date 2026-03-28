@@ -52,28 +52,26 @@ const HeroSection = () => {
             </div>
 
             {/* Quick stats */}
-            <div className="mt-10 flex items-center gap-8 justify-center lg:justify-start animate-fade-up delay-400">
-              <div>
-                <p className="text-2xl font-display font-800 text-foreground">100+</p>
-                <p className="text-xs text-muted-foreground font-medium">Happy Patients</p>
+            <div className="mt-10 grid w-full max-w-md grid-cols-3 overflow-hidden rounded-2xl border border-border bg-background/80 animate-fade-up delay-400 mx-auto lg:mx-0">
+              <div className="px-3 py-4 text-center border-r border-border/80">
+                <p className="text-2xl font-display font-800 text-foreground leading-none">100+</p>
+                <p className="mt-1 text-xs text-muted-foreground font-medium">Happy Patients</p>
               </div>
-              <div className="h-8 w-px bg-border" />
-              <div>
-                <p className="text-2xl font-display font-800 text-foreground">5.0</p>
-                <p className="text-xs text-muted-foreground font-medium">Google Rating</p>
+              <div className="px-3 py-4 text-center border-r border-border/80">
+                <p className="text-2xl font-display font-800 text-foreground leading-none">5.0</p>
+                <p className="mt-1 text-xs text-muted-foreground font-medium">Google Rating</p>
               </div>
-              <div className="h-8 w-px bg-border" />
-              <div>
-                <p className="text-2xl font-display font-800 text-foreground">10PM</p>
-                <p className="text-xs text-muted-foreground font-medium">Open Till</p>
+              <div className="px-3 py-4 text-center">
+                <p className="text-2xl font-display font-800 text-foreground leading-none">10PM</p>
+                <p className="mt-1 text-xs text-muted-foreground font-medium">Open Till</p>
               </div>
             </div>
           </div>
 
           {/* Doctor Image */}
-          <div className="hidden lg:block flex-shrink-0 animate-slide-in-right delay-200">
+          <div className="flex-shrink-0 w-full max-w-sm lg:max-w-none mx-auto lg:mx-0 animate-slide-in-right delay-200">
             <div className="relative">
-              <div className="w-[360px] h-[460px] rounded-3xl overflow-hidden shadow-2xl shadow-navy/20 ring-1 ring-border/50">
+              <div className="w-full lg:w-[360px] h-[420px] lg:h-[460px] rounded-3xl overflow-hidden shadow-2xl shadow-navy/20 ring-1 ring-border/50">
                 <img
                   src={doctorImg}
                   alt="Dr. Kshitij Mandle"
@@ -81,7 +79,7 @@ const HeroSection = () => {
                 />
               </div>
               {/* Floating card */}
-              <div className="absolute -bottom-4 -left-6 bg-background rounded-2xl p-4 shadow-xl border border-border/50">
+              <div className="absolute -bottom-4 left-4 lg:-left-6 bg-background rounded-2xl p-4 shadow-xl border border-border/50">
                 <p className="font-display font-bold text-foreground">Dr. Kshitij Mandle</p>
                 <p className="text-sm text-muted-foreground">BDS, Dental Surgeon</p>
               </div>
