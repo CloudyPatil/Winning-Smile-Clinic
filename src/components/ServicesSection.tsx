@@ -1,37 +1,41 @@
-import { Smile, CircleDot, Layers, AlignLeft, Palette, AlertTriangle } from "lucide-react";
+import { Smile, CircleDot, Layers, AlignLeft, Palette, AlertTriangle, ArrowRight } from "lucide-react";
 
 const services = [
-  { icon: Smile, name: "Teeth Cleaning", desc: "Professional cleaning for a brighter smile" },
-  { icon: CircleDot, name: "Root Canal", desc: "Pain-free root canal treatment" },
-  { icon: Layers, name: "Dental Implants", desc: "Permanent tooth replacement" },
-  { icon: AlignLeft, name: "Braces & Aligners", desc: "Straight teeth, confident smile" },
-  { icon: Palette, name: "Cosmetic Dentistry", desc: "Veneers, whitening & makeovers" },
-  { icon: AlertTriangle, name: "Emergency Care", desc: "Immediate relief when you need it" },
+  { icon: Smile, name: "Teeth Cleaning", desc: "Professional cleaning for a brighter, healthier smile" },
+  { icon: CircleDot, name: "Root Canal", desc: "Advanced pain-free root canal treatment" },
+  { icon: Layers, name: "Dental Implants", desc: "Permanent, natural-looking tooth replacement" },
+  { icon: AlignLeft, name: "Braces & Aligners", desc: "Straight teeth and a confident smile" },
+  { icon: Palette, name: "Cosmetic Dentistry", desc: "Veneers, whitening & complete makeovers" },
+  { icon: AlertTriangle, name: "Emergency Care", desc: "Immediate relief when you need it most" },
 ];
 
 const ServicesSection = () => {
   return (
-    <section id="services" className="py-20 lg:py-28 section-fade">
+    <section id="services" className="py-24 lg:py-32">
       <div className="container mx-auto">
-        <div className="text-center mb-12">
-          <p className="text-sm font-semibold uppercase tracking-widest text-primary mb-3">What We Offer</p>
-          <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground">Our Services</h2>
+        <div className="text-center mb-14">
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-primary mb-3">What We Offer</p>
+          <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-800 text-foreground">Our Services</h2>
         </div>
 
-        {/* Horizontal scroll on mobile, grid on desktop */}
-        <div className="flex gap-4 overflow-x-auto pb-4 snap-x snap-mandatory scrollbar-none lg:grid lg:grid-cols-3 lg:gap-6 lg:overflow-visible lg:pb-0 -mx-5 px-5 lg:mx-0 lg:px-0">
-          {services.map((s) => (
-            <div
-              key={s.name}
-              className="flex-shrink-0 w-[260px] lg:w-auto snap-start group"
-            >
-              <div className="relative p-6 rounded-2xl bg-card/80 backdrop-blur border border-border/60 hover:border-primary/30 transition-all duration-300 hover:shadow-lg hover:shadow-primary/5 h-full">
-                <div className="h-12 w-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
-                  <s.icon className="h-6 w-6 text-primary" />
+        {/* Vertical list with dividers */}
+        <div className="max-w-3xl mx-auto">
+          {services.map((s, i) => (
+            <div key={s.name}>
+              <a
+                href="#booking"
+                className="group flex items-center gap-5 py-6 px-2 transition-colors hover:bg-primary/5 rounded-xl -mx-2"
+              >
+                <div className="h-12 w-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0 group-hover:bg-primary/20 transition-colors">
+                  <s.icon className="h-5 w-5 text-primary" />
                 </div>
-                <h3 className="font-semibold text-foreground text-lg">{s.name}</h3>
-                <p className="mt-1.5 text-sm text-muted-foreground leading-relaxed">{s.desc}</p>
-              </div>
+                <div className="flex-1 min-w-0">
+                  <h3 className="font-display font-bold text-lg text-foreground group-hover:text-primary transition-colors">{s.name}</h3>
+                  <p className="text-sm text-muted-foreground mt-0.5">{s.desc}</p>
+                </div>
+                <ArrowRight className="h-5 w-5 text-muted-foreground/40 group-hover:text-primary group-hover:translate-x-1 transition-all flex-shrink-0" />
+              </a>
+              {i < services.length - 1 && <div className="h-px bg-border mx-2" />}
             </div>
           ))}
         </div>
