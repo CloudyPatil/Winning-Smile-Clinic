@@ -1,3 +1,6 @@
+import { useState } from "react";
+import { Star, ChevronLeft, ChevronRight, Quote } from "lucide-react";
+
 const reviews = [
   {
     name: "Priya S.",
@@ -17,28 +20,67 @@ const reviews = [
 ];
 
 const ReviewsSection = () => {
+  const [active, setActive] = useState(0);
+
+  const next = () => setActive((a) => (a + 1) % reviews.length);
+  const prev = () => setActive((a) => (a - 1 + reviews.length) % reviews.length);
+
+  const featured = reviews[active];
+
   return (
-    <section id="reviews" className="py-20 lg:py-28">
+    <section id="reviews" className="py-24 lg:py-32 bg-slate-bg">
       <div className="container mx-auto">
-        <div className="text-center mb-12">
-          <p className="text-sm font-semibold uppercase tracking-widest text-primary mb-3">Patient Love</p>
-          <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground">What Our Patients Say</h2>
+        <div className="text-center mb-14">
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-primary mb-3">Patient Love</p>
+          <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-800 text-foreground">What Our Patients Say</h2>
         </div>
 
-        <div className="space-y-6 max-w-2xl mx-auto">
-          {reviews.map((r, i) => (
-            <div key={i} className="relative pl-6 border-l-2 border-primary/30">
-              <div className="flex mb-2">
-                {[...Array(r.rating)].map((_, j) => (
-                  <svg key={j} className="h-4 w-4 text-clinic-gold" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                  </svg>
-                ))}
-              </div>
-              <p className="text-foreground leading-relaxed italic">"{r.text}"</p>
-              <p className="mt-2 text-sm font-semibold text-muted-foreground">— {r.name}</p>
+        {/* Featured review */}
+        <div className="max-w-2xl mx-auto text-center">
+          <Quote className="h-10 w-10 text-primary/20 mx-auto mb-6" />
+
+          <p className="text-xl md:text-2xl lg:text-3xl font-display font-600 leading-snug text-foreground">
+            "{featured.text}"
+          </p>
+
+          <div className="flex items-center justify-center gap-1 mt-6">
+            {[...Array(featured.rating)].map((_, j) => (
+              <Star key={j} className="h-5 w-5 text-gold fill-gold" />
+            ))}
+          </div>
+
+          <p className="mt-3 text-base font-semibold text-foreground">{featured.name}</p>
+          <p className="text-sm text-muted-foreground">Verified Patient</p>
+
+          {/* Navigation */}
+          <div className="flex items-center justify-center gap-4 mt-8">
+            <button
+              onClick={prev}
+              className="h-10 w-10 rounded-full border border-border flex items-center justify-center text-muted-foreground hover:text-foreground hover:border-foreground/30 transition-colors"
+              aria-label="Previous review"
+            >
+              <ChevronLeft className="h-5 w-5" />
+            </button>
+            <div className="flex gap-2">
+              {reviews.map((_, i) => (
+                <button
+                  key={i}
+                  onClick={() => setActive(i)}
+                  className={`h-2 rounded-full transition-all ${
+                    i === active ? "w-6 bg-primary" : "w-2 bg-border"
+                  }`}
+                  aria-label={`Review ${i + 1}`}
+                />
+              ))}
             </div>
-          ))}
+            <button
+              onClick={next}
+              className="h-10 w-10 rounded-full border border-border flex items-center justify-center text-muted-foreground hover:text-foreground hover:border-foreground/30 transition-colors"
+              aria-label="Next review"
+            >
+              <ChevronRight className="h-5 w-5" />
+            </button>
+          </div>
         </div>
       </div>
     </section>
