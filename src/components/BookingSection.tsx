@@ -11,7 +11,7 @@ const BookingSection = () => {
     const msg = encodeURIComponent(
       `Hi Dr. Mandle, I'd like to book an appointment.\nName: ${name}\nPreferred Time: ${time}\nTreatment Type: ${treatment}\nPhone: ${phone}`
     );
-    window.open(`https://wa.me/918369757266?text=${msg}`, "_blank");
+    window.open(`https://wa.me/919029852134?text=${msg}`, "_blank");
   };
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -106,7 +106,7 @@ const BookingSection = () => {
 
             <div className="mt-5 text-center">
               <a
-                href="tel:+918369757266"
+                href="tel:+919029852134"
                 className="inline-flex items-center gap-2 text-primary font-semibold hover:underline text-sm"
               >
                 <PhoneCall className="h-4 w-4" />

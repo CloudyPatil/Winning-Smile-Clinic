@@ -1,4 +1,4 @@
-import { Heart, Shield, Sparkles, CheckCircle } from "lucide-react";
+import { Heart, Shield, Sparkles } from "lucide-react";
 import doctorImg from "@/assets/doctor-refined.png";
 
 const AboutSection = () => {
@@ -27,17 +27,17 @@ const AboutSection = () => {
               Every visit is treated like family — with clear communication and the gentlest care.
             </p>
 
-            <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-6">
+            <div className="mt-8 grid grid-cols-3 gap-2 sm:gap-4">
               {[
                 { icon: Heart, label: "Gentle & Caring" },
                 { icon: Shield, label: "Painless Procedures" },
                 { icon: Sparkles, label: "Spotless Clinic" },
               ].map((t) => (
-                <div key={t.label} className="flex items-center gap-3 justify-center lg:justify-start">
-                  <div className="h-10 w-10 rounded-xl bg-primary/15 flex items-center justify-center flex-shrink-0">
+                <div key={t.label} className="rounded-xl bg-primary/10 px-2 py-3 sm:px-3 flex flex-col sm:flex-row items-center justify-center gap-2 text-center sm:text-left">
+                  <div className="h-8 w-8 sm:h-10 sm:w-10 rounded-xl bg-primary/15 flex items-center justify-center flex-shrink-0">
                     <t.icon className="h-5 w-5 text-primary" />
                   </div>
-                  <span className="font-semibold text-sm text-primary-foreground/90">{t.label}</span>
+                  <span className="font-semibold text-xs sm:text-sm text-primary-foreground/90 leading-tight">{t.label}</span>
                 </div>
               ))}
             </div>

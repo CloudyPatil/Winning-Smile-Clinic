@@ -23,19 +23,19 @@ const LocationSection = () => {
             />
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-8 justify-center">
+          <div className="grid grid-cols-3 gap-3 sm:gap-5">
             {[
               { icon: MapPin, title: "Address", line1: "Adaigaon, Adai", line2: "Maharashtra 410206" },
               { icon: Clock, title: "Hours", line1: "Open Daily", line2: "Till 10:00 PM" },
               { icon: Navigation, title: "Easy Access", line1: "Near New Panvel", line2: "Well-connected area" },
             ].map((item) => (
-              <div key={item.title} className="flex items-start gap-3 text-center sm:text-left justify-center sm:justify-start">
-                <div className="h-10 w-10 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
-                  <item.icon className="h-5 w-5 text-primary" />
+              <div key={item.title} className="rounded-xl bg-background/70 border border-border/70 px-2 py-3 sm:px-3 sm:py-4 text-center">
+                <div className="h-8 w-8 sm:h-10 sm:w-10 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-2">
+                  <item.icon className="h-4 w-4 sm:h-5 sm:w-5 text-primary" />
                 </div>
                 <div>
-                  <p className="font-semibold text-foreground text-sm">{item.title}</p>
-                  <p className="text-sm text-muted-foreground">{item.line1}<br />{item.line2}</p>
+                  <p className="font-semibold text-foreground text-xs sm:text-sm">{item.title}</p>
+                  <p className="text-[11px] leading-snug sm:text-sm text-muted-foreground">{item.line1}<br />{item.line2}</p>
                 </div>
               </div>
             ))}
