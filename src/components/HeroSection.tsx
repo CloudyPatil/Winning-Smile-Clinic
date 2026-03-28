@@ -1,6 +1,5 @@
 import { Phone, Calendar, Star } from "lucide-react";
 import doctorImg from "@/assets/doctor-refined.png";
-import doctorMobileImg from "@/assets/doctor.png";
 
 const HeroSection = () => {
   return (
@@ -16,11 +15,11 @@ const HeroSection = () => {
             {/* Doctor Image - Mobile */}
             <div className="lg:hidden w-full max-w-[360px] mx-auto mb-6 animate-fade-up">
               <div className="relative">
-                <div className="w-full h-[270px] rounded-3xl overflow-hidden shadow-2xl shadow-navy/20 ring-1 ring-border/50">
+                <div className="w-full h-[320px] rounded-3xl overflow-hidden shadow-2xl shadow-navy/20 ring-1 ring-border/50">
                   <img
-                    src={doctorMobileImg}
+                    src={doctorImg}
                     alt="Dr. Kshitij Mandle"
-                    className="w-full h-full object-cover object-center"
+                    className="w-full h-full object-cover object-[center_12%]"
                   />
                 </div>
                 <div className="absolute -bottom-3 left-3 bg-background/95 rounded-xl px-3 py-2 shadow-lg border border-border/60 text-left">
