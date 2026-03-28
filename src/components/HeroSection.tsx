@@ -3,7 +3,7 @@ import doctorImg from "@/assets/doctor-refined.png";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden bg-slate-bg">
+    <section className="relative min-h-screen flex items-start lg:items-center overflow-hidden bg-slate-bg">
       {/* Subtle decorative elements */}
       <div className="absolute top-0 right-0 w-[600px] h-[600px] rounded-full bg-teal/5 blur-3xl -translate-y-1/2 translate-x-1/3" />
       <div className="absolute bottom-0 left-0 w-[400px] h-[400px] rounded-full bg-primary/5 blur-3xl translate-y-1/2 -translate-x-1/3" />
@@ -12,6 +12,23 @@ const HeroSection = () => {
         <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-20">
           {/* Text */}
           <div className="flex-1 text-center lg:text-left">
+            {/* Doctor Image - Mobile */}
+            <div className="lg:hidden w-full max-w-[360px] mx-auto mb-6 animate-fade-up">
+              <div className="relative">
+                <div className="w-full h-[250px] rounded-3xl overflow-hidden shadow-2xl shadow-navy/20 ring-1 ring-border/50">
+                  <img
+                    src={doctorImg}
+                    alt="Dr. Kshitij Mandle"
+                    className="w-full h-full object-cover object-top"
+                  />
+                </div>
+                <div className="absolute -bottom-3 left-3 bg-background/95 rounded-xl px-3 py-2 shadow-lg border border-border/60 text-left">
+                  <p className="font-display text-sm font-bold text-foreground">Dr. Kshitij Mandle</p>
+                  <p className="text-xs text-muted-foreground">BDS, Dental Surgeon</p>
+                </div>
+              </div>
+            </div>
+
             {/* Trust badge */}
             <div className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-background px-4 py-1.5 mb-6 animate-fade-up shadow-sm">
               <div className="flex">
