@@ -69,9 +69,9 @@ const HeroSection = () => {
           </div>
 
           {/* Doctor Image */}
-          <div className="flex-shrink-0 w-full max-w-sm lg:max-w-none mx-auto lg:mx-0 animate-slide-in-right delay-200">
+          <div className="hidden lg:block flex-shrink-0 animate-slide-in-right delay-200">
             <div className="relative">
-              <div className="w-full lg:w-[360px] h-[420px] lg:h-[460px] rounded-3xl overflow-hidden shadow-2xl shadow-navy/20 ring-1 ring-border/50">
+              <div className="w-[360px] h-[460px] rounded-3xl overflow-hidden shadow-2xl shadow-navy/20 ring-1 ring-border/50">
                 <img
                   src={doctorImg}
                   alt="Dr. Kshitij Mandle"
@@ -79,7 +79,7 @@ const HeroSection = () => {
                 />
               </div>
               {/* Floating card */}
-              <div className="absolute -bottom-4 left-4 lg:-left-6 bg-background rounded-2xl p-4 shadow-xl border border-border/50">
+              <div className="absolute -bottom-4 -left-6 bg-background rounded-2xl p-4 shadow-xl border border-border/50">
                 <p className="font-display font-bold text-foreground">Dr. Kshitij Mandle</p>
                 <p className="text-sm text-muted-foreground">BDS, Dental Surgeon</p>
               </div>
