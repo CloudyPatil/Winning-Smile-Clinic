@@ -39,7 +39,7 @@ const GallerySection = () => {
           </div>
           <div className="hidden md:block">
             <a 
-              href="https://www.google.com/maps/place/DR.AARATHI'S+WINNING+SMILE/data=!4m7!3m6!1s0x3be7c83da9c90377:0x4328c1efb2da40a3!8m2!3d19.1161406!4d72.8725829!16s%2Fg%2F11gd1w0k5c" 
+              href="https://maps.app.goo.gl/s8tWcKbK4q3hYmL56" 
               target="_blank" 
               rel="noreferrer" 
               className="inline-flex items-center gap-2 text-primary font-semibold hover:underline"
@@ -69,7 +69,7 @@ const GallerySection = () => {
         
         <div className="mt-8 text-center md:hidden">
           <a 
-            href="https://www.google.com/maps/place/DR.AARATHI'S+WINNING+SMILE/data=!4m7!3m6!1s0x3be7c83da9c90377:0x4328c1efb2da40a3!8m2!3d19.1161406!4d72.8725829!16s%2Fg%2F11gd1w0k5c" 
+            href="https://maps.app.goo.gl/s8tWcKbK4q3hYmL56" 
             target="_blank" 
             rel="noreferrer" 
             className="inline-flex items-center justify-center gap-2 w-full rounded-xl border-2 border-foreground/10 bg-background px-7 py-4 text-sm font-semibold text-foreground hover:border-primary/30 hover:bg-primary/5 transition-all"
