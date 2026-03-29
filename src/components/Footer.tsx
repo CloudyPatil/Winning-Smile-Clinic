@@ -6,29 +6,29 @@ const Footer = () => {
       <div className="container mx-auto">
         <div className="flex flex-col md:flex-row justify-between gap-8">
           <div>
-            <h3 className="font-display text-xl font-bold text-primary-foreground">Let's Smile</h3>
-            <p className="text-primary-foreground/50 text-sm mt-1">Dental Clinic & Implant Centre</p>
+            <h3 className="font-display text-xl font-bold text-primary-foreground">Winning Smile</h3>
+            <p className="text-primary-foreground/50 text-sm mt-1">Multi-Speciality Dental Care Clinic</p>
           </div>
 
           <div className="flex flex-col sm:flex-row gap-6 text-sm text-primary-foreground/60">
             <div className="flex items-center gap-2">
               <Phone className="h-4 w-4" />
-              <a href="tel:8369757266" className="hover:text-primary-foreground transition">8369757266</a>
+              <a href="tel:09869909257" className="hover:text-primary-foreground transition">098699 09257</a>
             </div>
             <div className="flex items-center gap-2">
               <MapPin className="h-4 w-4" />
-              <span>Adaigaon, Adai, Maharashtra</span>
+              <span>Maheshwari Nagar, Andheri East, Mumbai</span>
             </div>
             <div className="flex items-center gap-2">
               <Clock className="h-4 w-4" />
-              <span>Open till 10 PM</span>
+              <span>Open till 8 PM</span>
             </div>
           </div>
         </div>
 
         <div className="mt-8 pt-6 border-t border-primary-foreground/10 flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-xs text-primary-foreground/30">
-            © {new Date().getFullYear()} Let's Smile Dental Clinic. All rights reserved.
+            © {new Date().getFullYear()} Winning Smile Dental Clinic. All rights reserved.
           </p>
           <nav className="flex gap-6 text-xs text-primary-foreground/40">
             <a href="#about" className="hover:text-primary-foreground/70 transition">About</a>

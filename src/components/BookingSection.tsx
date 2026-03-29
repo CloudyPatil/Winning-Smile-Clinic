@@ -9,9 +9,9 @@ const BookingSection = () => {
 
   const handleWhatsApp = () => {
     const msg = encodeURIComponent(
-      `Hi Dr. Mandle, I'd like to book an appointment.\nName: ${name}\nPreferred Time: ${time}\nTreatment Type: ${treatment}\nPhone: ${phone}`
+      `Hi Dr. Aarathi, I'd like to book an appointment.\nName: ${name}\nPreferred Time: ${time}\nTreatment Type: ${treatment}\nPhone: ${phone}`
     );
-    window.open(`https://wa.me/919029852134?text=${msg}`, "_blank");
+    window.open(`https://wa.me/919869909257?text=${msg}`, "_blank");
   };
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -45,7 +45,7 @@ const BookingSection = () => {
               </div>
 
               <p className="mt-4 text-sm font-semibold text-foreground">
-                Today's slots filling fast • Open till 10 PM
+                Today's slots filling fast • Open till 8 PM
               </p>
             </div>
 
@@ -106,7 +106,7 @@ const BookingSection = () => {
 
             <div className="mt-5 text-center">
               <a
-                href="tel:+919029852134"
+                href="tel:09869909257"
                 className="inline-flex items-center gap-2 text-primary font-semibold hover:underline text-sm"
               >
                 <PhoneCall className="h-4 w-4" />

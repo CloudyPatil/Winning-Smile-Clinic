@@ -12,22 +12,22 @@ const LocationSection = () => {
         <div className="max-w-3xl mx-auto">
           <div className="rounded-2xl overflow-hidden shadow-lg ring-1 ring-border/50 mb-10">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3772.0!2d73.13!3d19.0!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDAxJzAwLjAiTiA3M8KwMDcnNDguMCJF!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.761001426027!2d72.87188731514336!3d19.11802998706354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c87042a55099%3A0xc348bbcecc6ce69!2sAndheri%20East%2C%20Mumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
               width="100%"
               height="300"
               style={{ border: 0 }}
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Let's Smile Dental Clinic Location"
+              title="Winning Smile Dental Clinic Location"
             />
           </div>
 
           <div className="grid grid-cols-3 gap-3 sm:gap-5">
             {[
-              { icon: MapPin, title: "Address", line1: "Adaigaon, Adai", line2: "Maharashtra 410206" },
-              { icon: Clock, title: "Hours", line1: "Open Daily", line2: "Till 10:00 PM" },
-              { icon: Navigation, title: "Easy Access", line1: "Near New Panvel", line2: "Well-connected area" },
+              { icon: MapPin, title: "Address", line1: "Maheshwari Nagar, Andheri East", line2: "Mumbai, Maharashtra 400059" },
+              { icon: Clock, title: "Hours", line1: "Open Daily", line2: "Till 8:00 PM" },
+              { icon: Navigation, title: "Easy Access", line1: "Near Pearl Heaven Chandiwala", line2: "Well-connected area" },
             ].map((item) => (
               <div key={item.title} className="rounded-xl bg-background/70 border border-border/70 px-2 py-3 sm:px-3 sm:py-4 text-center">
                 <div className="h-8 w-8 sm:h-10 sm:w-10 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-2">

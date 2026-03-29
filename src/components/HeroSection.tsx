@@ -1,5 +1,5 @@
 import { Phone, Calendar, Star } from "lucide-react";
-import doctorImg from "@/assets/doctor-refined.png";
+import doctorImg from "@/assets/doctor-aarathi-real.jpg";
 
 const HeroSection = () => {
   return (
@@ -18,12 +18,12 @@ const HeroSection = () => {
                 <div className="w-full h-[320px] rounded-3xl overflow-hidden shadow-2xl shadow-navy/20 ring-1 ring-border/50">
                   <img
                     src={doctorImg}
-                    alt="Dr. Kshitij Mandle"
+                    alt="Dr. Aarathi"
                     className="w-full h-full object-cover object-[center_12%]"
                   />
                 </div>
                 <div className="absolute -bottom-3 left-3 bg-background/95 rounded-xl px-3 py-2 shadow-lg border border-border/60 text-left">
-                  <p className="font-display text-sm font-bold text-foreground">Dr. Kshitij Mandle</p>
+                  <p className="font-display text-sm font-bold text-foreground">Dr. Aarathi</p>
                   <p className="text-xs text-muted-foreground">BDS, Dental Surgeon</p>
                 </div>
               </div>
@@ -36,19 +36,19 @@ const HeroSection = () => {
                   <Star key={i} className="h-3.5 w-3.5 text-gold fill-gold" />
                 ))}
               </div>
-              <span className="text-sm font-semibold text-foreground">5.0 Rated</span>
-              <span className="text-xs text-muted-foreground">• 100+ patients</span>
+              <span className="text-sm font-semibold text-foreground">4.9 Rated</span>
+              <span className="text-xs text-muted-foreground">• 499+ patients</span>
             </div>
 
             <h1 className="font-display text-[2.5rem] md:text-5xl lg:text-[3.5rem] font-800 leading-[1.08] tracking-tight text-foreground animate-fade-up delay-100">
               Pain-Free Dental
               <br />
               Care in{" "}
-              <span className="text-primary">New Panvel</span>
+              <span className="text-primary">Andheri East</span>
             </h1>
 
             <p className="mt-5 text-lg text-muted-foreground max-w-md mx-auto lg:mx-0 leading-relaxed animate-fade-up delay-200">
-              Trusted, gentle care by <strong className="text-foreground font-semibold">Dr. Kshitij Mandle</strong> — where every smile is treated with precision and warmth.
+              Trusted, gentle care by <strong className="text-foreground font-semibold">Dr. Aarathi</strong> — where every smile is treated with precision and warmth.
             </p>
 
             <div className="mt-8 flex flex-col sm:flex-row gap-3 justify-center lg:justify-start animate-fade-up delay-300">
@@ -60,7 +60,7 @@ const HeroSection = () => {
                 Book Appointment
               </a>
               <a
-                href="tel:8369757266"
+                href="tel:09869909257"
                 className="inline-flex items-center justify-center gap-2.5 rounded-xl border-2 border-foreground/10 bg-background px-7 py-4 text-base font-semibold text-foreground hover:border-primary/30 hover:bg-primary/5 transition-all hover:-translate-y-0.5"
               >
                 <Phone className="h-5 w-5" />
@@ -71,15 +71,15 @@ const HeroSection = () => {
             {/* Quick stats */}
             <div className="mt-10 grid w-full max-w-md grid-cols-3 overflow-hidden rounded-2xl border border-border bg-background/80 animate-fade-up delay-400 mx-auto lg:mx-0">
               <div className="px-3 py-4 text-center border-r border-border/80">
-                <p className="text-2xl font-display font-800 text-foreground leading-none">100+</p>
+                <p className="text-2xl font-display font-800 text-foreground leading-none">499+</p>
                 <p className="mt-1 text-xs text-muted-foreground font-medium">Happy Patients</p>
               </div>
               <div className="px-3 py-4 text-center border-r border-border/80">
-                <p className="text-2xl font-display font-800 text-foreground leading-none">5.0</p>
+                <p className="text-2xl font-display font-800 text-foreground leading-none">4.9</p>
                 <p className="mt-1 text-xs text-muted-foreground font-medium">Google Rating</p>
               </div>
               <div className="px-3 py-4 text-center">
-                <p className="text-2xl font-display font-800 text-foreground leading-none">10PM</p>
+                <p className="text-2xl font-display font-800 text-foreground leading-none">8PM</p>
                 <p className="mt-1 text-xs text-muted-foreground font-medium">Open Till</p>
               </div>
             </div>
@@ -91,13 +91,13 @@ const HeroSection = () => {
               <div className="w-[360px] h-[460px] rounded-3xl overflow-hidden shadow-2xl shadow-navy/20 ring-1 ring-border/50">
                 <img
                   src={doctorImg}
-                  alt="Dr. Kshitij Mandle"
+                  alt="Dr. Aarathi"
                   className="w-full h-full object-cover object-top"
                 />
               </div>
               {/* Floating card */}
               <div className="absolute -bottom-4 -left-6 bg-background rounded-2xl p-4 shadow-xl border border-border/50">
-                <p className="font-display font-bold text-foreground">Dr. Kshitij Mandle</p>
+                <p className="font-display font-bold text-foreground">Dr. Aarathi</p>
                 <p className="text-sm text-muted-foreground">BDS, Dental Surgeon</p>
               </div>
             </div>

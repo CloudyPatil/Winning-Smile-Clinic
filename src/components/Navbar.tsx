@@ -4,6 +4,7 @@ import { Calendar, Menu, X } from "lucide-react";
 const navLinks = [
   { label: "About", href: "#about" },
   { label: "Services", href: "#services" },
+  { label: "Gallery", href: "#gallery" },
   { label: "Reviews", href: "#reviews" },
   { label: "Location", href: "#location" },
 ];
@@ -28,7 +29,7 @@ const Navbar = () => {
     >
       <div className="container mx-auto flex items-center justify-between h-16 lg:h-[72px]">
         <a href="#" className="font-display font-bold text-xl tracking-tight text-foreground">
-          Let's Smile
+          Winning Smile
         </a>
 
         {/* Desktop nav */}

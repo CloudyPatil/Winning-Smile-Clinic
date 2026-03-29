@@ -1,5 +1,5 @@
 import { Heart, Shield, Sparkles } from "lucide-react";
-import doctorImg from "@/assets/doctor-refined.png";
+import doctorImg from "@/assets/doctor-aarathi-real.jpg";
 
 const AboutSection = () => {
   return (
@@ -12,7 +12,7 @@ const AboutSection = () => {
           {/* Image */}
           <div className="flex-shrink-0">
             <div className="w-40 h-40 lg:w-72 lg:h-80 rounded-2xl lg:rounded-3xl overflow-hidden ring-2 ring-primary/30 shadow-2xl">
-              <img src={doctorImg} alt="Dr. Kshitij Mandle" className="w-full h-full object-cover object-top" />
+              <img src={doctorImg} alt="Dr. Aarathi" className="w-full h-full object-cover object-top" />
             </div>
           </div>
 
@@ -20,10 +20,10 @@ const AboutSection = () => {
           <div className="flex-1 text-center lg:text-left">
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-primary mb-3">Meet Your Doctor</p>
             <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-800 leading-tight">
-              Dr. Kshitij Mandle
+              Dr. Aarathi
             </h2>
             <p className="mt-5 text-lg leading-relaxed text-primary-foreground/70 max-w-xl mx-auto lg:mx-0">
-              With a passion for creating beautiful, healthy smiles, Dr. Mandle brings expertise and genuine empathy to every patient. 
+              With a passion for creating beautiful, healthy smiles, Dr. Aarathi brings expertise and genuine empathy to every patient. 
               Every visit is treated like family — with clear communication and the gentlest care.
             </p>
 
