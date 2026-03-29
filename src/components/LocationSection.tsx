@@ -12,7 +12,7 @@ const LocationSection = () => {
         <div className="max-w-3xl mx-auto">
           <div className="rounded-2xl overflow-hidden shadow-lg ring-1 ring-border/50 mb-10">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.761001426027!2d72.87188731514336!3d19.11802998706354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c87042a55099%3A0xc348bbcecc6ce69!2sAndheri%20East%2C%20Mumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+              src="https://maps.google.com/maps?q=DR.AARATHI'S%20WINNING%20SMILE,%20Andheri%20East,%20Mumbai&t=&z=16&ie=UTF8&iwloc=&output=embed"
               width="100%"
               height="300"
               style={{ border: 0 }}
@@ -25,7 +25,7 @@ const LocationSection = () => {
 
           <div className="grid grid-cols-3 gap-3 sm:gap-5">
             {[
-              { icon: MapPin, title: "Address", line1: "Maheshwari Nagar, Andheri East", line2: "Mumbai, Maharashtra 400059" },
+              { icon: MapPin, title: "Address", line1: "Sterling Court Apartment", line2: "Andheri East, Mumbai 400059" },
               { icon: Clock, title: "Hours", line1: "Open Daily", line2: "Till 8:00 PM" },
               { icon: Navigation, title: "Easy Access", line1: "Near Pearl Heaven Chandiwala", line2: "Well-connected area" },
             ].map((item) => (
